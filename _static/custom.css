@@ -1,0 +1,16 @@
+/* Light theme */
+.light-theme {
+--left-panel-color-light: #f0f0f0; /* Your desired light theme color */
+}
+
+.dark-theme {
+--left-panel-color-dark: #ff0000; /* Your desired dark theme color */
+}
+
+.bd-sidebar {
+background-color: var(--left-panel-color-light) !important;
+}
+
+.dark-theme .bd-sidebar {
+background-color: var(--left-panel-color-dark) !important;
+}
