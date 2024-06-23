@@ -51,6 +51,11 @@ html[data-theme="dark"] {
     margin:5px;
 }
 
+.footer-center a {
+    text-decoration: none;
+    padding: 10px;
+}
+
 /* html[data-theme="light"] {
     --pst-sidebar-color-background: #a51c30; /* Replace with your desired color
 } */
