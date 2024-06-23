@@ -9,11 +9,23 @@
 
 <div>
     <p float="left">
-        <img src="../_static/assets/logos/fiji.png" width="10%" />
-        <img src="../_static/assets/logos/qupath.png" width="10%" />
-        <img src="../_static/assets/logos/cellpose3.png" width="10%" />
-        <img src="../_static/assets/logos/napari.png" width="10%" />
-        <img src="../_static/assets/logos/ilastik.png" width="10%" />
-        <img src="../_static/assets/logos/plantseg.png" width="10%" />
+        <a href="https://fiji.sc" target="_blank">
+            <img src="../_static/assets/logos/fiji.png" width="10%" />
+        </a>
+        <a href="https://qupath.github.io" target="_blank">
+            <img src="../_static/assets/logos/qupath.png" width="10%" />
+        </a>
+        <a href="http://cellpose.org" target="_blank">
+            <img src="../_static/assets/logos/cellpose3.png" width="10%" />
+        </a>
+        <a href="https://napari.org/stable/" target="_blank">
+            <img src="../_static/assets/logos/napari.png" width="10%" />
+        </a>
+        <a href="https://www.ilastik.org" target="_blank">
+            <img src="../_static/assets/logos/ilastik.png" width="10%" />
+        </a>
+        <a href="https://github.com/kreshuklab/plant-seg" target="_blank">
+            <img src="../_static/assets/logos/plantseg.png" width="10%" />
+        </a>
     </p>
 </div>

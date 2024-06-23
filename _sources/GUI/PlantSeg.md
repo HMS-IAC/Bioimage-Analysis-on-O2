@@ -2,7 +2,9 @@
 
 <div>
     <p float="left">
-        <img src="../_static/assets/logos/plantseg.png" width="10%" />
+        <a href="https://github.com/kreshuklab/plant-seg" target="_blank">
+            <img src="../_static/assets/logos/plantseg.png" width="10%" />
+        </a>
     </p>
 </div>
 

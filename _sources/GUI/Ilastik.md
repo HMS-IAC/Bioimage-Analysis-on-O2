@@ -2,7 +2,9 @@
 
 <div>
     <p float="left">
-        <img src="../_static/assets/logos/ilastik.png" width="10%" />
+        <a href="https://www.ilastik.org" target="_blank">
+            <img src="../_static/assets/logos/ilastik.png" width="10%" />
+        </a>
     </p>
 </div>
 

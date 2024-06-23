@@ -2,7 +2,9 @@
 
 <div>
     <p float="left">
-        <img src="../_static/assets/logos/fiji.png" width="10%" />
+        <a href="https://fiji.sc" target="_blank">
+            <img src="../_static/assets/logos/fiji.png" width="10%" />
+        </a>
     </p>
 </div>
 

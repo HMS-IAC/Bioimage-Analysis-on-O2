@@ -2,7 +2,9 @@
 
 <div>
     <p float="left">
-        <img src="../_static/assets/logos/cellpose3.png" width="10%" />
+        <a href="http://cellpose.org" target="_blank">
+            <img src="../_static/assets/logos/cellpose3.png" width="10%" />
+        </a>
     </p>
 </div>
 

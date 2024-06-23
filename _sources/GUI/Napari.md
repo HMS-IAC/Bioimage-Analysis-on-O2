@@ -2,7 +2,9 @@
 
 <div>
     <p float="left">
-        <img src="../_static/assets/logos/napari.png" width="10%" />
+        <a href="https://napari.org/stable/" target="_blank">
+            <img src="../_static/assets/logos/napari.png" width="10%" />
+        </a>
     </p>
 </div>
 

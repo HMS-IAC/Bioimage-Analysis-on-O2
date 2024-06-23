@@ -2,7 +2,9 @@
 
 <div>
     <p float="left">
-        <img src="../_static/assets/logos/qupath.png" width="10%" />
+        <a href="https://qupath.github.io" target="_blank">
+            <img src="../_static/assets/logos/qupath.png" width="10%" />
+        </a>
     </p>
 </div>
 
