@@ -18,4 +18,5 @@ Napari
 Ilastik
 CellPose3
 PlantSeg
+CellProfiler
 FAQ

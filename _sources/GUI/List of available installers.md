@@ -5,9 +5,10 @@
 - Napari
 - Ilastik
 - Plantseg
+- CellProfiler 4.2.6
 
 
-<div>
+<div class="installer-logo">
     <p float="left">
         <a href="https://fiji.sc" target="_blank">
             <img src="../_static/assets/logos/fiji.png" width="10%" />
@@ -26,6 +27,9 @@
         </a>
         <a href="https://github.com/kreshuklab/plant-seg" target="_blank">
             <img src="../_static/assets/logos/plantseg.png" width="10%" />
+        </a>
+        <a href="https://cellprofiler.org/" target="_blank">
+            <img src="../_static/assets/logos/cellprofiler.png" width="10%" />
         </a>
     </p>
 </div>

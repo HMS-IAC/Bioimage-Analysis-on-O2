@@ -8,6 +8,8 @@
     </p>
 </div>
 
+*Version: 0.5.1*
+
 ---
 ## Introduction
 <a href="https://qupath.github.io" target="_blank">QuPath</a> QuPath is an open-source bioimage analysis software designed for digital pathology and whole slide image analysis. It is particularly well-suited for working with large, high-resolution images typical in histology and pathology, including brightfield and fluorescence microscopy images. QuPath offers advanced tools for image segmentation, cell detection, and quantitative analysis, making it an invaluable resource for researchers in the biomedical field aiming to extract meaningful insights from complex biological images.
@@ -46,45 +48,53 @@
     2. **Using a browser** *(Chrome recommended)*: Alternatively, you can also go to [this link](https://o2portal.rc.hms.harvard.edu/pun/sys/shell/ssh/o2.hms.harvard.edu) to login to an O2 shell via browser. Detailed instructions are provided [here](https://harvardmed.atlassian.net/wiki/spaces/O2/pages/2234581082/Open+an+O2+command+line+terminal).
 2. Once you log in, run the following command to request compute access:
 
-```bash
+```{code-block} bash
 srun --pty -p interactive -t 0-4:00 --mem 16g bash
 ```
 
 ### Run Installer
 #### To **install**:
-```bash
+```{code-block} bash
 /n/app/bias/qupath/qupath.sh -i
 ```
 or
-```bash
+```{code-block} bash
 /n/app/bias/qupath/qupath.sh --install
 ```
+
+<div class="admonition hint">
+  <p class="admonition-title">Example</p>
+  <code>/n/app/bias/qupath/qupath.sh -i -p /path/to/your/installation/directory</code>
+</div>
+
+
 <div class="admonition tip">
   <p class="admonition-title">Tip</p>
   <p>By deafult all QuPath files are copied to your home directory. However, as the space of the home directory is limited, we recommend you specify a path (scratch or lab folder) by adding <code>-p</code> or <code>--path</code> as your input argument where all the files will be stored.</p>
 </div>
 
 #### To **uninstall**:
-```bash
+```{code-block} bash
 /n/app/bias/qupath/qupath.sh -u
 ```
 or
-```bash
+```{code-block} bash
 /n/app/bias/qupath/qupath.sh --uninstall
 ```
 
 #### For **help**:
-```bash
+```{code-block} bash
 /n/app/bias/qupath/qupath.sh -h
 ```
 or
-```bash
+```{code-block} bash
 /n/app/bias/qupath/qupath.sh --help
 ```
 
 ## Using QuPath on O2
 ### Using the GUI
 Once the installation is complete, you can verify that everything is set up correctly by logging into [Desktop Mate](https://o2portal.rc.hms.harvard.edu/pun/sys/dashboard/batch_connect/sys/RC_desktop_mate/session_contexts/new). If you're unsure how to do this, please refer to this [HMS RC guide on logging into Desktop Mate](https://harvardmed.atlassian.net/wiki/spaces/O2/pages/2235006977/How+to+use+HMS+RC+Desktop+App).
+
 
 <div class="admonition tip">
   <p class="admonition-title">Tip</p>

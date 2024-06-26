@@ -1,27 +1,31 @@
-# PlantSeg
+# CellProfiler
 
 <div>
     <p float="left">
-        <a href="https://github.com/kreshuklab/plant-seg" target="_blank">
-            <img src="../_static/assets/logos/plantseg.png" width="10%" />
+        <a href="https://cellprofiler.org/" target="_blank">
+            <img src="../_static/assets/logos/cellprofiler.png" width="10%" />
         </a>
     </p>
 </div>
 
+*Version: 4.2.6*
 
 ---
 ## Introduction
-<a href="https://github.com/kreshuklab/plant-seg" target="_blank">Cellpose</a> is a bioimage analysis software designed for cell instance-aware segmentation in densely packed 3D volumetric images. It employs a two-stage segmentation strategy, combining neural network predictions with advanced segmentation techniques to achieve precise results. PlantSeg is particularly optimized for plant cell tissues, making it an ideal tool for analyzing images acquired through confocal and light sheet microscopy. With the provision of pre-trained models, users can efficiently segment complex plant tissues, facilitating detailed and accurate biological analysis.
+<a href="https://cellprofiler.org/" target="_blank">CellProfiler</a> is a free, open-source software designed for the quantitative analysis of biological images. It allows biologists, even those without expertise in computer vision or programming, to measure cell or whole-organism phenotypes from thousands of images automatically. Users create an analysis pipeline using modules to identify cells and their compartments, measuring various features to generate a comprehensive, quantitative dataset. While the software provides general and successful methods by default, users can customize these settings and leverage basic image analysis algorithms to tackle more complex challenges. Extensible through plugins in Python or for ImageJ, CellProfiler excels in analyzing cells, neurons, C. elegans, 2D fluorescent images, high-throughput screening, phenotype classification, and handling multiple stains per site. However, it is primarily limited to 2D images, is not ideal for manually-guided analysis, and has image size limitations.
 
 **Keywords:**
-```{tags} segmentation, machine-learning
+```{tags} image-processing, high-content-screening, segmentation, machine-learning
 ```
 
 <button class="custom-button">
-  <a href="https://kreshuklab.github.io/plant-seg/" target="_blank"><i class="fas fa-book"></i>   Documentation </a>
+  <a href="https://cellprofiler-manual.s3.amazonaws.com/CellProfiler-4.2.6/index.html" target="_blank"><i class="fas fa-book"></i>   Documentation </a>
 </button>
 <button class="custom-button">
-  <a href="https://github.com/kreshuklab/plant-seg?tab=readme-ov-file" target="_blank"><i class="fa-brands fa-github"></i>   GitHub </a>
+  <a href="https://github.com/CellProfiler/CellProfiler" target="_blank"><i class="fa-brands fa-github"></i>   GitHub </a>
+</button>
+<button class="custom-button">
+  <a href="https://forum.image.sc/tag/cellprofiler" target="_blank"><img src="../_static/assets/logos/forum_w.png" width="20px"/>   Forum </a>
 </button>
 
 ---
@@ -49,11 +53,11 @@ srun --pty -p interactive -t 0-4:00 --mem 16g bash
 ### Run Installer
 #### To **install**:
 ```bash
-/n/app/bias/plantseg/plantseg.sh -i
+/n/app/bias/cellprofiler/cellprofiler.sh -i 
 ```
 or
 ```bash
-/n/app/bias/plantseg/plantseg.sh --install
+/n/app/bias/cellprofiler/cellprofiler.sh --install
 ```
 <div class="admonition tip">
   <p class="admonition-title">Tip</p>
@@ -62,29 +66,25 @@ or
 
 #### To **uninstall**:
 ```bash
-/n/app/bias/plantseg/plantseg.sh -u
+/n/app/bias/cellprofiler/cellprofiler.sh -u
 ```
 or
 ```bash
-/n/app/bias/plantseg/plantseg.sh --uninstall
+/n/app/bias/cellprofiler/cellprofiler.sh --uninstall
 ```
 
 #### For **help**:
 ```bash
-/n/app/bias/plantseg/plantseg.sh -h
+/n/app/bias/cellprofiler/cellprofiler.sh -h
 ```
 or
 ```bash
-/n/app/bias/plantseg/plantseg.sh --help
+/n/app/bias/cellprofiler/cellprofiler.sh --help
 ```
 
 ---
-## Using PlantSeg on O2
+## Using Cellpose3 on O2
 
-<div class="admonition tip">
-  <p class="admonition-title">Tip</p>
-  <p>PlantSeg installation does include PyTorch so for accelerated inference, you can use GPU both for the GUI and for headless mode.</p>
-</div>
 
 ### Using the GUI
 Once the installation is complete, you can verify that everything is set up correctly by logging into [Desktop Mate](https://o2portal.rc.hms.harvard.edu/pun/sys/dashboard/batch_connect/sys/RC_desktop_mate/session_contexts/new). If you're unsure how to do this, please refer to this [HMS RC guide on logging into Desktop Mate](https://harvardmed.atlassian.net/wiki/spaces/O2/pages/2235006977/How+to+use+HMS+RC+Desktop+App).
@@ -102,20 +102,20 @@ When you're finished using the software, you can log out. The next time you need
 
 
 ### Using in headless mode
-One can use PlantSeg through the command line interface (CLI). Instructions regarding the usage can be found <a href="https://kreshuklab.github.io/plant-seg/chapters/plantseg_classic_cli/" target="_blank">here</a>. You will need to activate the plantseg environment first to use cellpose through CLI. If you used the default installation path, you can load the environement using the following command:
+One can use CellProfiler through the command line interface (CLI) for batch processing. Instructions regarding the usage can be found <a href="https://cellprofiler-manual.s3.amazonaws.com/CellProfiler-4.2.6/help/other_batch.html?highlight=headless" target="_blank">here</a>. You will need to activate the cellprofiler environment first to use cellpose through CLI. If you used the default installation path, you can load the environement using the following command:
 ```bash
 module load miniconda3/23.1.0
-source activate plantseg
+source activate $HOME/Documents/cellprofiler/env
 ```
 Alternatively, if you installed cellpose in a different path, then run the following command:
 ```bash
 module load miniconda3/23.1.0
-source activate -p <plantseg_installation_directory>/plantseg/env
+source activate -p </path/to/your/cellprofiler/installation>/cellprofiler/env
 ```
 
 ---
 <div class="admonition note">
   <p class="admonition-title">Reference</p>
-  <p>Wolny, A., Cerrone, L., Vijayan, A., Tofanelli, R., Barro, A. V., Louveaux, M., Wenzl, C., Strauss, S., Wilson-Sánchez, D., Lymbouridou, R., Steigleder, S. S., Pape, C., Bailoni, A., Duran-Nebreda, S., Bassel, G. W., Lohmann, J. U., Tsiantis, M., Hamprecht, F. A., Schneitz, K., Maizel, A., … Kreshuk, A. (2020). Accurate and versatile 3D segmentation of plant tissues at cellular resolution. eLife, 9, e57613. <a href="https://doi.org/10.7554/eLife.57613" target="_blank">doi:10.7554/eLife.57613</a></p>
-  <p><i>Find more information <a href="https://github.com/kreshuklab/plant-seg?tab=readme-ov-file#citation" target="_blank">here</a>.</i></p>
+  <p>Stirling, D.R., Swain-Bowden, M.J., Lucas, A.M. et al. CellProfiler 4: improvements in speed, utility and usability. BMC Bioinformatics 22, 433 (2021).<a href="https://doi.org/10.1186/s12859-021-04344-9" target="_blank">doi:10.1186/s12859-021-04344-9</a></p>
+  <p><i>Find more information <a href="https://cellprofiler.org/citations" target="_blank">here</a>.</i></p>
 </div>

@@ -8,6 +8,7 @@
     </p>
 </div>
 
+
 ---
 ## Introduction
 <a href="https://fiji.sc" target="_blank">FIJI (Fiji Is Just ImageJ)</a> is an open-source bioimage analysis software widely used in the scientific community for processing and analyzing biological images. Built on the robust ImageJ platform, FIJI enhances ImageJ's capabilities with a comprehensive suite of plugins, tools, and scripting options tailored for advanced image analysis. Researchers and biologists leverage FIJI for tasks such as image segmentation, feature extraction, and 3D reconstruction, making it an indispensable tool in fields like microscopy, cell biology, and medical imaging. Its user-friendly interface, extensive documentation, and active community support further solidify FIJI's role as a go-to resource for bioimage analysis.

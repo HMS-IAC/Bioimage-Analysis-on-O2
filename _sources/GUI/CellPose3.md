@@ -8,6 +8,8 @@
     </p>
 </div>
 
+*Version: 3*
+
 ---
 ## Introduction
 <a href="http://cellpose.org" target="_blank">Cellpose</a> is a powerful bioimage analysis software developed in Python 3 for segmenting a variety of cellular structures in diverse image types, including fluorescence microscopy images and other biological microscopy data. It offers an easy-to-use interface with one-click image restoration for enhanced cellular segmentation, making it suitable for researchers and scientists working on cellular and subcellular level imaging. Users can install it via pip or try it directly on cellpose.org, making it accessible and versatile for different bioimaging needs.

@@ -8,7 +8,9 @@
     </p>
 </div>
 
+*Version: 1.4.0.post1*
 
+---
 ## Introduction
 <a href="https://www.ilastik.org" target="_blank">Ilastik</a> is a versatile, user-friendly bioimage analysis software designed to facilitate the segmentation, classification, and tracking of various biological images. Its intuitive graphical interface allows researchers to perform sophisticated image processing tasks without the need for extensive programming knowledge. ilastik is particularly well-suited for analyzing fluorescence microscopy images, histology slides, and other complex biological datasets, making it an invaluable tool for researchers in fields such as cell biology, neuroscience, and developmental biology.
 

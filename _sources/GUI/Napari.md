@@ -8,6 +8,9 @@
     </p>
 </div>
 
+*Version: 0.4.19*
+
+---
 ## Introduction
 <a href="https://napari.org/stable/" target="_blank">Napari</a> is a powerful, interactive, and user-friendly bioimage analysis software designed specifically for Python. It excels in browsing, annotating, and analyzing large multi-dimensional images, making it ideal for complex datasets in biological research. Napari is built on top of Qt for its graphical user interface (GUI), vispy for efficient GPU-based rendering, and leverages the scientific Python stack, including numpy and scipy. With its robust support for multi-dimensional data, layering, and annotation, napari is particularly well-suited for handling images such as 3D fluorescence microscopy, time-lapse imaging, and other high-dimensional biological datasets. Its seamless integration with leading machine learning and image analysis tools, like scikit-image, scikit-learn, TensorFlow, and PyTorch, enhances its capability for advanced, automated analysis.
 
