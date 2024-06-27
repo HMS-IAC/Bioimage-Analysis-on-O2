@@ -430,7 +430,7 @@ document.write(`
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-cellpose3-on-o2">Using Cellpose3 on O2</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-cellprofiler-on-o2">Using CellProfiler on O2</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-gui">Using the GUI</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-in-headless-mode">Using in headless mode</a></li>
 </ul>
@@ -537,8 +537,8 @@ document.write(`
 </section>
 </section>
 <hr class="docutils" />
-<section id="using-cellpose3-on-o2">
-<h2>Using Cellpose3 on O2<a class="headerlink" href="#using-cellpose3-on-o2" title="Link to this heading">#</a></h2>
+<section id="using-cellprofiler-on-o2">
+<h2>Using CellProfiler on O2<a class="headerlink" href="#using-cellprofiler-on-o2" title="Link to this heading">#</a></h2>
 <section id="using-the-gui">
 <h3>Using the GUI<a class="headerlink" href="#using-the-gui" title="Link to this heading">#</a></h3>
 <p>Once the installation is complete, you can verify that everything is set up correctly by logging into <a class="reference external" href="https://o2portal.rc.hms.harvard.edu/pun/sys/dashboard/batch_connect/sys/RC_desktop_mate/session_contexts/new">Desktop Mate</a>. If you’re unsure how to do this, please refer to this <a class="reference external" href="https://harvardmed.atlassian.net/wiki/spaces/O2/pages/2235006977/How+to+use+HMS+RC+Desktop+App">HMS RC guide on logging into Desktop Mate</a>.</p>
@@ -551,12 +551,12 @@ document.write(`
 </section>
 <section id="using-in-headless-mode">
 <h3>Using in headless mode<a class="headerlink" href="#using-in-headless-mode" title="Link to this heading">#</a></h3>
-<p>One can use CellProfiler through the command line interface (CLI) for batch processing. Instructions regarding the usage can be found <a href="https://cellprofiler-manual.s3.amazonaws.com/CellProfiler-4.2.6/help/other_batch.html?highlight=headless" target="_blank">here</a>. You will need to activate the cellprofiler environment first to use cellpose through CLI. If you used the default installation path, you can load the environement using the following command:</p>
+<p>One can use CellProfiler through the command line interface (CLI) for batch processing. Instructions regarding the usage can be found <a href="https://cellprofiler-manual.s3.amazonaws.com/CellProfiler-4.2.6/help/other_batch.html?highlight=headless" target="_blank">here</a>. You will need to activate the cellprofiler environment first to use it through CLI. If you used the default installation path, you can load the environement using the following command:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>module<span class="w"> </span>load<span class="w"> </span>miniconda3/23.1.0
 <span class="nb">source</span><span class="w"> </span>activate<span class="w"> </span><span class="nv">$HOME</span>/Documents/cellprofiler/env
 </pre></div>
 </div>
-<p>Alternatively, if you installed cellpose in a different path, then run the following command:</p>
+<p>Alternatively, if you installed CellProfiler in a different path, then run the following command:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>module<span class="w"> </span>load<span class="w"> </span>miniconda3/23.1.0
 <span class="nb">source</span><span class="w"> </span>activate<span class="w"> </span>-p<span class="w"> </span>&lt;/path/to/your/cellprofiler/installation&gt;/cellprofiler/env
 </pre></div>
@@ -627,7 +627,7 @@ document.write(`
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-cellpose3-on-o2">Using Cellpose3 on O2</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-cellprofiler-on-o2">Using CellProfiler on O2</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-gui">Using the GUI</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-in-headless-mode">Using in headless mode</a></li>
 </ul>
